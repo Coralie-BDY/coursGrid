@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2,
+h3 {
+    margin: 5px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+}
+
+.elem {
+    background: #4a69bd;
+    border: 2px solid black;
+}
+
+.container-flex {
+    display: inline-flex;
+    flex-flow: column;
+    margin-bottom: 5px;
+}
+
+.wrapper1 {
+    box-sizing: border-box;
+    display: inline-grid;
+    margin-left: 5px;
+    padding: 5px;
+    border: red solid 2px;
+    width: 200px;
+    height: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.elem1 {
+    background: #4a69bd;
+    border: 1px solid black;
+    min-height: 50%;
+    min-width: 50%;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.a-start {
+    align-items: start;
+}
+
+.a-end {
+    align-items: end;
+}
+
+.a-stretch {
+    align-items: stretch;
+}
+
+.j-center {
+    justify-items: center;
+}
+
+.j-start {
+    justify-items: start;
+}
+
+.j-end {
+    justify-items: end;
+}
+
+.j-stretch {
+    justify-items: stretch;
+}
+
+.aj-center {
+    place-items: center;
+}
+
+.aj-start {
+    place-items: start;
+}
+
+.aj-end {
+    place-items: end;
+}
+
+.aj-start-end {
+    place-items: start end;
+}
